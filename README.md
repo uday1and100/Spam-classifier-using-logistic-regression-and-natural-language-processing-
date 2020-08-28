@@ -78,7 +78,7 @@ we then map spam=1, and ham = 0 in the dataset. thus the dataset is ready to be 
    **PRECISION** is used to measure **SPECIFICITY**
    for various thresholds we plot the PRECISION VS RECALL CURVE. 
  
- ##PRECISION VS RECALL CURVE
+ ## PRECISION VS RECALL CURVE
    
  - #### why precision vs recall curve and not the ROC CURVE?
    the general rule of thumb is that when we are concerned about the sensitivity we plot the ROC CURVE. when we are concerned about specificity we plot the precision vs recall curve. roc curve helps us understand senstivity since it focusses on true positive rate vs false positive rate. we are concerned about specificity in this case which is why we use the precision vs recall curve
