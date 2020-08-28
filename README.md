@@ -1,5 +1,5 @@
 
-# SPAM CLASSIFIER USING LOGISTIC REGRESSION 
+# SPAM CLASSIFIER USING LOGISTIC REGRESSION and NATURAL LANGUAGE PROCESSING
 The project focusses on building a spam classifier using the popular sms data set from the uci machine learning repository.
 concepts of NLP,classfication using logistic regressing are implemented to build this project. 
 # contents
