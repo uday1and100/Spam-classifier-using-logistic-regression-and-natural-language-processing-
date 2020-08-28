@@ -1,12 +1,10 @@
-# machine-learning-and-deep-learning-projects
 
-
-# 1) spam classifer using NLP and logistic regression 
+# SPAM CLASSIFIER USING LOGISTIC REGRESSION 
 The project focusses on building a spam classifier using the popular sms data set from the uci machine learning repository.
 concepts of NLP,classfication using logistic regressing are implemented to build this project. 
 # contents
 [google](#heading-1)
-## concept of the project
+## CONCEPT OF THE PROJECT
 spams are any unwanted or unnecessary messages we get. They include scams, virus links and advertisements and these are different from the messages we get from friends, family, college , workplace etc. 
 - #### why do we need to classify and delete spams?
 we need to classify and delete spams because they may sometimes contain  viruses or trojans which may get installed to the system once the mail is opened.
@@ -21,7 +19,7 @@ we can implement **classification techniques in machine learning** to classify m
    - **NLTK**
    - **regular expression**
    - **matplotlib**
-## the dataset
+## THE DATASET
 the dataset used in this project is [**SMS SPAM COLLECTION DATA SET**](https://archive.ics.uci.edu/ml/datasets/SMS+Spam+Collection). it is quiet a popular dataset in the world of machine learning. it contains totally 5574 instances where the first word of every instance tells if the message is spam or ham. The message and the label are seperated by a tab space.
 
 ![](https://github.com/uday1and100/machine-learning-and-deep-learning-projects/blob/master/Untitled.jpg)
@@ -74,7 +72,18 @@ we then map spam=1, and ham = 0 in the dataset. thus the dataset is ready to be 
    for various thresholds we plot the PRECISION VS RECALL CURVE. 
    
  - #### why precision vs recall curve and not the ROC CURVE?
-   the general rule of thumb is that when we are concerned about the sensitivity we plot the ROC CURVE. when we are concerned about specificity we plot the precision vs recall curve.
+   the general rule of thumb is that when we are concerned about the sensitivity we plot the ROC CURVE. when we are concerned about specificity we plot the precision vs recall curve. roc curve helps us understand senstivity since it focusses on true positive rate vs false positive rate. we are concerned about specificity in this case which is why we use the precision vs recall curve
+    
+   ![](https://github.com/uday1and100/Spam-classifier-using-logistic-regression/blob/master/acc.jpg)
+   
+the graph is plotted for the thresholds [0.5,0.6,0.65,0.7] 
+for the thresholds [0.5,0.6] the sensitivity is very high(99%) which may lead to false positives. for the threshold 0.7, the sensiitivity drops to 87%. the ideal threshold would be **0.65** where the precision is 96% and the sensitivity is also 98%.
+
+## INFERENCE
+the project was successfully built using the required libraries. by varying the thresholds , the best values of accuracy, precision and recall was obtained.
+**accuracy** = 97%
+**precision** = 96%
+**recall** = 98%
    
    
    
