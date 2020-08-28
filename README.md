@@ -26,6 +26,7 @@ we can implement **classification techniques in machine learning** to classify m
    - **NLTK**
    - **regular expression**
    - **matplotlib**
+   - **imblearn**
 ## THE DATASET
 the dataset used in this project is [**SMS SPAM COLLECTION DATA SET**](https://archive.ics.uci.edu/ml/datasets/SMS+Spam+Collection). it is quiet a popular dataset in the world of machine learning. it contains totally 5574 instances where the first word of every instance tells if the message is spam or ham. The message and the label are seperated by a tab space.
 
@@ -54,6 +55,8 @@ the mined data is then fed to the count vectorizer which creates the bag of word
 ## FEATURE ENGINEERING FOR THE IMBALANCED DATASET
 the dataset is imbalanced. there are more number of instances for hams when compared to spams. this may to lead a bias in the model. so we create more instances for the "spam" category using oversampling. this can be done using imblearn library and we make equal number for instances for both.
 we then map spam=1, and ham = 0 in the dataset. thus the dataset is ready to be fed to the algorithm.
+  #### SMOTE TECHNIQUE FOR OVERSAMPLING
+   -for creating more instances we import the SMOTETomek from the library imblearn.combine and we fit our data to it. This helps us in creating more number of instances for the undersampled spam category thereby creating a balanced dataset.
 
 ## CREATING THE MODEL
   the algorithm used here is LOGISTIC REGRESSION which is a pretty good algorithm for binary classification. I chose this algorithm as it is simple and i can obtain the    probabilites of predictions easily which makes it easier for me to vary the thresholds and check for precision and recall. 
