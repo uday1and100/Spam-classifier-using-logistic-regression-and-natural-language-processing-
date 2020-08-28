@@ -3,7 +3,8 @@
 The project focusses on building a spam classifier using the popular sms data set from the uci machine learning repository.
 concepts of NLP,classfication using logistic regressing are implemented to build this project. 
 # contents
-[google](#heading-1)
+1. [concept of the project](##heading-1)
+2. [THE DATASET](##heading-2)
 ## CONCEPT OF THE PROJECT
 spams are any unwanted or unnecessary messages we get. They include scams, virus links and advertisements and these are different from the messages we get from friends, family, college , workplace etc. 
 - #### why do we need to classify and delete spams?
@@ -44,7 +45,7 @@ the mined data is then fed to the count vectorizer which creates the bag of word
 
 ![](https://image.slidesharecdn.com/wordembedings-whythehype-151203065649-lva1-app6891/95/word-embeddings-why-the-hype-4-638.jpg?cb=1449126428)
 
-## FEATURE ENGINEERING
+## FEATURE ENGINEERING FOR THE IMBALANCED DATASET
 the dataset is imbalanced. there are more number of instances for hams when compared to spams. this may to lead a bias in the model. so we create more instances for the "spam" category using oversampling. this can be done using imblearn library and we make equal number for instances for both.
 we then map spam=1, and ham = 0 in the dataset. thus the dataset is ready to be fed to the algorithm.
 
