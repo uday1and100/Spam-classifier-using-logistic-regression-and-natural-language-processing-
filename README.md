@@ -3,8 +3,9 @@
 The project focusses on building a spam classifier using the popular sms data set from the uci machine learning repository.
 concepts of NLP,classfication using logistic regressing are implemented to build this project. 
 # contents
-1. [concept of the project](##CONCEPT OF THE PROJECT)
-2. [THE DATASET](##THE DATASET)
+1. [concept of the project](##heading-1)
+2. [THE DATASET](##heading-2)
+3. [implementing natural language processing](##heading-3)
 ## CONCEPT OF THE PROJECT
 spams are any unwanted or unnecessary messages we get. They include scams, virus links and advertisements and these are different from the messages we get from friends, family, college , workplace etc. 
 - #### why do we need to classify and delete spams?
