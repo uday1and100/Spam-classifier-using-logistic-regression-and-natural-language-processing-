@@ -9,7 +9,8 @@ concepts of NLP,classfication using logistic regressing are implemented to build
 4. [feature engineering for the unbalanced dataset](#feature-engineering-for-the-unbalanced-dataset)
 5. [creating the model](#creating-the-model)
 6. [predicition and metrics](#prediction-and-metrics)
-7. [infere
+7. [precision vs recall curve](#precision-vs-recall-curve)
+7. [inference](#inference)
 ## CONCEPT OF THE PROJECT
 spams are any unwanted or unnecessary messages we get. They include scams, virus links and advertisements and these are different from the messages we get from friends, family, college , workplace etc. 
 - #### why do we need to classify and delete spams?
@@ -76,6 +77,8 @@ we then map spam=1, and ham = 0 in the dataset. thus the dataset is ready to be 
    **RECALL** is used to measure **SENSITIVITY**
    **PRECISION** is used to measure **SPECIFICITY**
    for various thresholds we plot the PRECISION VS RECALL CURVE. 
+ 
+ ##PRECISION VS RECALL CURVE
    
  - #### why precision vs recall curve and not the ROC CURVE?
    the general rule of thumb is that when we are concerned about the sensitivity we plot the ROC CURVE. when we are concerned about specificity we plot the precision vs recall curve. roc curve helps us understand senstivity since it focusses on true positive rate vs false positive rate. we are concerned about specificity in this case which is why we use the precision vs recall curve
