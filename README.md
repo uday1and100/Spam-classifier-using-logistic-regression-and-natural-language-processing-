@@ -10,7 +10,8 @@ concepts of NLP,classfication using logistic regressing are implemented to build
 5. [creating the model](#creating-the-model)
 6. [predicition and metrics](#prediction-and-metrics)
 7. [precision vs recall curve](#precision-vs-recall-curve)
-7. [inference](#inference)
+8. [inference](#inference)
+9. [source code](#source-code)
 ## CONCEPT OF THE PROJECT
 spams are any unwanted or unnecessary messages we get. They include scams, virus links and advertisements and these are different from the messages we get from friends, family, college , workplace etc. 
 - #### why do we need to classify and delete spams?
@@ -97,5 +98,5 @@ the project was successfully built using the required libraries. by varying the 
 **precision** = 96%
 **recall** = 98%
    
-   
-   
+## SOURCE CODE 
+  [**source code**](https://github.com/uday1and100/Spam-classifier-using-logistic-regression/blob/master/spamclassifer_ipyn.py)
