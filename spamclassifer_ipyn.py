@@ -52,7 +52,7 @@ import matplotlib.pyplot as plt
 lg = LogisticRegression()
 lg.fit(x_train,y_train)
 y_pred= lg.predict_proba(x_test)
-thresholds = [0.7]
+thresholds = [0.5,0.6,0.65,0.7]
 for i in thresholds:
   y_prede = y_pred[:,1]
   for j in range(0,len(y_prede)):
@@ -64,14 +64,22 @@ for i in thresholds:
   print("precision",precision_score(y_test,y_prede))
   print("recall",recall_score(y_test,y_prede))
   print("\n")
+   ##the best values are noted down in the lists pr and re
   pr = [0.92,0.95,0.96,0.98]
   re = [0.99,0.98,0.98,0.82]
   plt.plot(re,pr)
   plt.xlabel("precision")
   plt.ylabel("recall")
   plt.show()
-
+i = 0.65 
+#setting the threshold to 0.65
+  y_prede = y_pred[:,1]
+  for j in range(0,len(y_prede)):
+    if y_prede[j]>i:
+      y_prede[j]=1
+    else:
+      y_prede[j]=0
 from sklearn.metrics import accuracy_score,precision_score,recall_score
-print("accuracy",accuracy_score(y_test,y_pred))
-print("precision",precision_score(y_test,y_pred))
-print("recall",recall_score(y_test,y_pred))
+print("accuracy",accuracy_score(y_test,y_prede))
+print("precision",precision_score(y_test,y_prede))
+print("recall",recall_score(y_test,y_prede))
