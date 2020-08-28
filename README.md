@@ -5,8 +5,11 @@ concepts of NLP,classfication using logistic regressing are implemented to build
 # contents
 1. [concept of the project](#concept-of-the-project)
 2. [THE DATASET](#the-dataset)
-3. [implementing natural language processing](##heading-3)
-4. [
+3. [implementing natural language processing](#implementing-natural-language-processing)
+4. [feature engineering for the unbalanced dataset](#feature-engineering-for-the-unbalanced-dataset)
+5. [creating the model](#creating-the-model)
+6. [predicition and metrics](#prediction-and-metrics)
+7. [infere
 ## CONCEPT OF THE PROJECT
 spams are any unwanted or unnecessary messages we get. They include scams, virus links and advertisements and these are different from the messages we get from friends, family, college , workplace etc. 
 - #### why do we need to classify and delete spams?
