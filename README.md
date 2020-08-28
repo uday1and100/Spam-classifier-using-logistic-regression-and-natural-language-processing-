@@ -6,7 +6,7 @@ concepts of NLP,classfication using logistic regressing are implemented to build
 1. [concept of the project](#concept-of-the-project)
 2. [THE DATASET](#the-dataset)
 3. [implementing natural language processing](#implementing-natural-language-processing)
-4. [feature engineering for the unbalanced dataset](#feature-engineering-for-the-unbalanced-dataset)
+4. [feature engineering for the imbalanced dataset](#feature-engineering-for-the-imbalanced-dataset)
 5. [creating the model](#creating-the-model)
 6. [predicition and metrics](#prediction-and-metrics)
 7. [precision vs recall curve](#precision-vs-recall-curve)
